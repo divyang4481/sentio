@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationDefinitions>
+  <Application
+    id="2B02E835-97CC-4beb-B4D7-730F1663A4DF"
+    Name="Debug Application"
+    Author="Karimek"
+    Assembly="debug_application.dll" />
+
+  <Application
+    id="C081CC81-1EC1-455a-9595-73CAD686E7DB"
+    Name="Test Application"
+    Author="Karimek"
+    Assembly="test_application.dll" />
+</ApplicationDefinitions>

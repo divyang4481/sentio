@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ecd3b5b5-caa8-4b62-90fb-7acb25f674ff" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://karim-pc2:8090/Sentio.Grid/Server/Deployment" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Deployment.xsd" MetadataType="Schema" ID="10b3e623-dbca-44af-8d72-b63a0cf5cb59" SourceId="1" SourceUrl="http://localhost:8090/Sentio.Grid/Server/Deployment?xsd=xsd0" />
+    <MetadataFile FileName="DeploymentService.wsdl" MetadataType="Wsdl" ID="859263a1-911d-4030-b649-9033f53652f1" SourceId="1" SourceUrl="http://localhost:8090/Sentio.Grid/Server/Deployment?wsdl" />
+    <MetadataFile FileName="Deployment.disco" MetadataType="Disco" ID="94f9cafe-5706-42b1-858f-0f7552a69c88" SourceId="1" SourceUrl="http://localhost:8090/Sentio.Grid/Server/Deployment?disco" />
+    <MetadataFile FileName="Deployment2.xsd" MetadataType="Schema" ID="911ab11c-6834-4f7e-8091-ff4da749d487" SourceId="1" SourceUrl="http://localhost:8090/Sentio.Grid/Server/Deployment?xsd=xsd1" />
+    <MetadataFile FileName="Deployment3.xsd" MetadataType="Schema" ID="8d9ee064-8ea3-42d5-8316-8f79f61e7f2c" SourceId="1" SourceUrl="http://localhost:8090/Sentio.Grid/Server/Deployment?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
