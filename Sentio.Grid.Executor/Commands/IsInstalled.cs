@@ -16,24 +16,23 @@ namespace Sentio.Grid.Executor.Commands
             try
             {
                 client = new DeploymentServiceClient(new System.ServiceModel.WSHttpBinding(),
-                                                                             new System.ServiceModel.EndpointAddress(
-                                                                                 ServicesBindingRegistry.
-                                                                                     GetDeploymentService("deployment services",
-                                                                                     CommandsHelper.GetCommandArgument(
-                                                                                         input, 1))));
+                                                     new System.ServiceModel.EndpointAddress(
+                                                         ServicesBindingRegistry.
+                                                             GetDeploymentService("deployment services",
+                                                                                  CommandsHelper.GetCommandArgument(
+                                                                                      input, 1))));
             }
             catch
             {
                 return Messages.CouldNotConnectToServer;
             }
 
-           try
-           {
-               bool installed = client.IsApplicationInstalled(new Guid(CommandsHelper.GetCommandArgument(input, 2)));
-               if (installed)
-                   return true.ToString();
-               return false.ToString();
-           }
+            if(client.IsApplicationInstalledByName(CommandsHelper.GetCommandArgument(input, 2)) == true)
+                return true.ToString();
+            try
+            {
+                return client.IsApplicationInstalledByID(new Guid(CommandsHelper.GetCommandArgument(input, 2))).ToString();
+            }
             catch
             {
                 return false.ToString();
