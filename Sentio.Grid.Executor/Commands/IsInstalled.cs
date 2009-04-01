@@ -27,7 +27,7 @@ namespace Sentio.Grid.Executor.Commands
                 return Messages.CouldNotConnectToServer;
             }
 
-            if(client.IsApplicationInstalledByName(CommandsHelper.GetCommandArgument(input, 2)) == true)
+            if(client.IsApplicationInstalledByName(CommandsHelper.GetCommandArgument(input, 2)))
                 return true.ToString();
             try
             {
